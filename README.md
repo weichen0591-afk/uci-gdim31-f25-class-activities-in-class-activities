@@ -1,7 +1,9 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
+When you run the game, the Camera will no longer move with the Cat. The Cat can move around, but the Camera stays in its original position. This happens because the Camera is no longer a child of the Cat, so it does not automatically follow the Cat’s position or movement.
+
+[Working Itch page](https://muphone.itch.io/gdim-31-w1-in-class-activity)
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
