@@ -1,5 +1,6 @@
 # in-class-activities
 ## Devlogs
+Wei Chen, he/him
 ### W1
 When you run the game, the Camera will no longer move with the Cat. The Cat can move around, but the Camera stays in its original position. This happens because the Camera is no longer a child of the Cat, so it does not automatically follow the Cat’s position or movement.
 
@@ -7,6 +8,9 @@ When you run the game, the Camera will no longer move with the Cat. The Cat can 
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+1. The r, g, and b are floats because they are color values and can have decimal values such as 0.3f or 0.9f. An Int cannot hold decimal values; it only holds whole numbers. bools store either true or false, and strings store text.
+2. I think _bounce is an int because it counts how many times the ball has bounced. A bounce is always a whole number, so there is no reason to use a decimal value.
+3. It informed me that 1.0 was not being treated as a float. Since g is a float, I had to type 1.0f instead, so the f tells C# that the number should be a float.     
 
 ## Open-Source Assets
 ### W1
