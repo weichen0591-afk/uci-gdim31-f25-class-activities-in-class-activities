@@ -29,6 +29,14 @@ Activity 3: methods coding activity
 
 I think the balls get extremely bright because every time they bounce fast enough, the code multiplies their current color by 1.5. Because the ball's color keeps getting multiplied instead of returning to its original value, the brightness increases more and more after each bounce. Eventually, the color values become very high, which makes the balls look extremely bright in the Scene.
 
+### W4
+Table Number: 15
+
+Activity 1: Collision discussion activity
+
+1. We added Rigidbodies to both the Cat and SoccerBall because they need to move and physically interact with other objects. We left Is Trigger unchecked for both because the cat needs to kick the ball, and they both need to collide with walls. For the Goal, we checked Is Trigger and did not add a Rigidbody because the ball needs to pass through it while the game detects when a goal is scored.
+2. When I first tested my game, I got an error in SoccerBall.cs because I forgot to put quotation marks around the message inside Debug.Log(). I checked the error message in Unity and found the problem on line 27. I fixed the code by adding the quotation marks. I also had to adjust the Cat's Capsule Collider size because it was too large at first.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
