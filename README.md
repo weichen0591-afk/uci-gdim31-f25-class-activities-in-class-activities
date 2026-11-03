@@ -37,6 +37,16 @@ Activity 1: Collision discussion activity
 1. We added Rigidbodies to both the Cat and SoccerBall because they need to move and physically interact with other objects. We left Is Trigger unchecked for both because the cat needs to kick the ball, and they both need to collide with walls. For the Goal, we checked Is Trigger and did not add a Rigidbody because the ball needs to pass through it while the game detects when a goal is scored.
 2. When I first tested my game, I got an error in SoccerBall.cs because I forgot to put quotation marks around the message inside Debug.Log(). I checked the error message in Unity and found the problem on line 27. I fixed the code by adding the quotation marks. I also had to adjust the Cat's Capsule Collider size because it was too large at first.
 
+### W6
+Table Number: 8, work with Gaozan Ye
+
+Activity 1: Pair programming
+
+1. I was thinking that the DeerW5 class needs a Transform variable called _target to store and keep the GameObject that the deer will walk toward. My partner and I will use [SerializeField] like the CatW5 so I can choose the target in the Unity Inspector. For this activity, I decided to use the Cat GameObject as the target.
+2. We chose a plan to use the Start() method that Unity provides since we only need to set the deer's destination when the game begins, and we do not have to worry about it afterward. We did not think we needed an Update() method because the NavMeshAgent can handle the movement after receiving its destination by itself.
+3. When the game starts, the Start() method should use GetComponent<NavMeshAgent>() to get the NavMeshAgent Component attached to the Deer. Then, it should call SetDestination() using the Cat's position through _target.position. This will allow the deer to automatically walk toward the Cat's starting position by following the NavMesh.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
