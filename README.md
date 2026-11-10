@@ -46,6 +46,13 @@ Activity 1: Pair programming
 2. We chose a plan to use the Start() method that Unity provides since we only need to set the deer's destination when the game begins, and we do not have to worry about it afterward. We did not think we needed an Update() method because the NavMeshAgent can handle the movement after receiving its destination by itself.
 3. When the game starts, the Start() method should use GetComponent<NavMeshAgent>() to get the NavMeshAgent Component attached to the Deer. Then, it should call SetDestination() using the Cat's position through _target.position. This will allow the deer to automatically walk toward the Cat's starting position by following the NavMesh.
 
+### W7
+Table Number 8
+
+Activity 1: Class resource guide
+
+I wrote both the Math and Other Tools category, here is our [Finished Google Doc](https://docs.google.com/document/d/1F78Fx8NinOQnaUd4iHZIwK7Ql3RlhhHgiyIwT_JT4_k/edit?usp=sharing)
+
 
 ## Open-Source Assets
 ### W1
