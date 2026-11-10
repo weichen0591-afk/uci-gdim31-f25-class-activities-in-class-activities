@@ -53,6 +53,25 @@ Activity 1: Class resource guide
 
 I wrote both the Math and Other Tools category, here is our [Finished Google Doc](https://docs.google.com/document/d/1F78Fx8NinOQnaUd4iHZIwK7Ql3RlhhHgiyIwT_JT4_k/edit?usp=sharing)
 
+Activity 2: Pair programming (work with Gaozan Ye)
+
+Plan for BatW6 Class
+1. Open C# script called BatW6.cs.
+2. Attach the BatW6 Component to all 10 Bat GameObjects.
+3. Add a float variable called _moveSpeed to control how fast the bats move.
+4. Use [SerializeField] so the movement speed can be changed in the Inspector.
+5. Add a Transform variable called _cat to store the Cat's position.
+6. Use Update() to make the bats move toward the Cat every frame.
+7. Calculate the direction between the bat and Cat using Vector3.
+8. Use _moveSpeed and Time.deltaTime to control the movement.
+9. Create two public methods, StartChasing() and StopChasing(), to enable and disable the chasing behavior.
+10. Use Start() to call StartChasing() for testing.
+11. Run the game and check if all the bats chase the Cat.
+
+Planning Questions
+1. I think the BatW6 class officially needs two member variables. The first one should have a float called _moveSpeed, which can control how fast the bats move. I also used [SerializeField] so that I can change the speed in the Inspector. The second variable is a Transform called _cat, which stores the Cat's Transform so the bats know where to move.
+2. I think we need the Unity methods Start() and Update(), as well as two methods we write ourselves called StartChasing() and StopChasing(). The Update() method is important because the bats need to keep following the Cat every frame. I also made the two chasing methods public and therefore it can cause the BatManager can call them later.
+3. The StartChasing() method enables the BatW6 Component, while StopChasing() disables it. Inside Update(), I used Vector3 to calculate the direction from each bat to the Cat. Then, I used _moveSpeed and Time.deltaTime to move the bats toward the Cat. For the testing part, I called StartChasing() inside Start() therefore all the bats would chase the Cat at first when the game began. After testing the game, I found that all the bats has moved toward the Cat and overlap as I expected.
 
 ## Open-Source Assets
 ### W1
