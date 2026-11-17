@@ -73,7 +73,7 @@ Planning Questions
 2. I think we need the Unity methods Start() and Update(), as well as two methods we write ourselves called StartChasing() and StopChasing(). The Update() method is important because the bats need to keep following the Cat every frame. I also made the two chasing methods public and therefore it can cause the BatManager can call them later.
 3. The StartChasing() method enables the BatW6 Component, while StopChasing() disables it. Inside Update(), I used Vector3 to calculate the direction from each bat to the Cat. Then, I used _moveSpeed and Time.deltaTime to move the bats toward the Cat. For the testing part, I called StartChasing() inside Start() therefore all the bats would chase the Cat at first when the game began. After testing the game, I found that all the bats has moved toward the Cat and overlap as I expected.
 
-### W7
+### W8
 
 In Step 2 of the coding part, I found out that the original code used Vector3.forward to move the Muskrat. The main problem with that was that the codeVector3.forward always points in the same direction in world space, even when the Muskrat turns around. Because of this, the Muskrat would not move in the direction it was facing. In order to fix this, what I did is that I changed Vector3.forward to transform.forward, which uses the Muskrat's own forward direction. After making this change, the movement follows the direction the Muskrat is facing. I learned that world space and object space are different, and choosing the right one is important when controlling a character's movement.
 
